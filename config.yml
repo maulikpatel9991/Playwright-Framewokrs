@@ -1,0 +1,34 @@
+# The 'env' key specifies the default environment to be used
+env: prod
+
+# Configuration for the 'prod' (production) environment
+prod:
+  url: https://www.saucedemo.com/
+  api_url: https://restful-booker.herokuapp.com
+  UserName: standard_user
+  Password: secret_sauce
+  LockedUserName: locked_out_user
+  LockedPassword: secret_sauce
+  InvalidUserName: test_standard_user
+  InvalidPassword: testing
+  Headless: False
+  SlowMo: "0"
+  DefaultNavigationTimeout: "120000"
+  DefaultTimeout: "60000"
+  DatFolder: testData_Prod
+
+# Configuration for the 'qa' (quality assurance) environment
+qa:
+  url: https://www.saucedemo.com/
+  api_url: https://restful-booker.herokuapp.com
+  UserName: standard_user
+  Password: secret_sauce
+  LockedUserName: locked_out_user
+  LockedPassword: secret_sauce
+  InvalidUserName: test_standard_user
+  InvalidPassword: testing
+  Headless: False
+  SlowMo: "0"
+  DefaultNavigationTimeout: "120000"
+  DefaultTimeout: "60000"
+  DatFolder: testData_QA
