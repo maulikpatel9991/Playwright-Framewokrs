@@ -57,4 +57,3 @@ def test_create_authToken_negative(api_request_context,case):
     validate_response_code(response, case["expected_status"])
     validate_schema(response=response, schema=case['expected_schema'])
 
-    # https://github.com/DipankarDandapat/Playwright_API_Python_Framework/blob/main/testcases/test_1_auth.py
