@@ -31,17 +31,18 @@ def get_browser(browser_name, playwright, launch_options):
     Raises:
         ValueError: If the provided `browser_name` is not supported.
     """
-    match browser_name:
-        case "chromium":
-            return playwright.chromium.launch(**launch_options, args=['--start-maximized'])
-        case "firefox":
-            return playwright.firefox.launch(**launch_options)
-        case "msedge":
-            return playwright.chromium.launch(channel='msedge', **launch_options, args=['--start-maximized'])
-        case "webkit":
-            return playwright.webkit.launch(**launch_options)
-        case _:
-            raise ValueError(f"Unsupported browser: {browser_name}")
+
+    if browser_name == "chromium":
+        return playwright.chromium.launch(**launch_options)
+    elif browser_name == "firefox":
+        return playwright.firefox.launch(**launch_options)
+    elif browser_name == "webkit":
+        return playwright.webkit.launch(**launch_options)
+    elif browser_name == "msedge":
+        return playwright.chromium.launch(**launch_options)  # Edge is based on Chromium
+    else:
+        raise ValueError(f"Unsupported browser: {browser_name}")
+
 
 
 @pytest.fixture()

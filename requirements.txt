@@ -2,3 +2,5 @@ pytest-playwright==0.5.1
 pytest==8.1.1
 pytest-xdist==3.6.1
 requests==2.31.0
+pytest_html_reporter
+jsonpath_ng
