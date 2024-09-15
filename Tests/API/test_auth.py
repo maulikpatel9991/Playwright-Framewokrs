@@ -4,6 +4,7 @@ from Utils.api_validations import validate_response_code, validate_schema
 from Utils.api_utilities import get_value_from_response
 import pytest
 from Utils.utils import shared_data
+import yaml
 
 
 
