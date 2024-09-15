@@ -319,3 +319,21 @@
 2024-09-15 10:18:47,973 - Date - INFO - Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': '', 'password': ''} and headers: {'Content-Type': 'application/json'}
 2024-09-15 10:18:48,527 - Date - INFO - Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {} and headers: {'Content-Type': 'application/json'}
 2024-09-15 10:18:49,145 - Date - INFO - testcase End now .....
+2024-09-15 10:38:45,175 - Date - INFO - Resolved file path: testData/testData_QA/
+2024-09-15 10:38:45,175 - Date - INFO - Reading file from path: testData/testData_QA/createAuth.json
+2024-09-15 10:38:45,175 - Date - INFO - Successfully read data from file: createAuth.json
+2024-09-15 10:38:47,712 - Date - INFO - testcase start now .....
+2024-09-15 10:38:47,718 - Date - INFO - Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'admin', 'password': 'password123'} and headers: {'Content-Type': 'application/json'}
+2024-09-15 10:38:49,570 - Date - INFO - API executed successfully and the response code: 200
+2024-09-15 10:38:49,570 - Date - INFO - Expected response code: 200 is matches the actual code: 200
+2024-09-15 10:38:49,593 - Date - INFO - API executed successfully and the response data is {'token': 'b92b363f1fced82'}
+2024-09-15 10:38:49,593 - Date - INFO - Schema validation passed.
+2024-09-15 10:38:49,606 - Date - INFO - API executed successfully and the response value in token is b92b363f1fced82
+2024-09-15 10:38:49,606 - Date - INFO - Setting data for key: token_id with value: b92b363f1fced82
+2024-09-15 10:38:49,624 - Date - INFO - Current data state: {'token_id': 'b92b363f1fced82'}
+2024-09-15 10:38:49,630 - Date - INFO - Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Dipankar', 'password': 'Dipankar'} and headers: {'Content-Type': 'application/json'}
+2024-09-15 10:38:50,071 - Date - INFO - API executed successfully and the response data is {'reason': 'Bad credentials'}
+2024-09-15 10:38:50,075 - Date - INFO - Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Dipankar', 'password': ''} and headers: {'Content-Type': 'application/json'}
+2024-09-15 10:38:50,532 - Date - INFO - Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': '', 'password': ''} and headers: {'Content-Type': 'application/json'}
+2024-09-15 10:38:51,075 - Date - INFO - Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {} and headers: {'Content-Type': 'application/json'}
+2024-09-15 10:38:51,685 - Date - INFO - testcase End now .....
