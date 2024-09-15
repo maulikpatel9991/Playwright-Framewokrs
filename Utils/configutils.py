@@ -1,6 +1,6 @@
 import os
 
-import yaml
+# import yaml
 
 
 def load_config(env: str) -> dict:
